@@ -27,13 +27,13 @@ function toggleDescription(productId) {
 
   // Toggle visibility of description and update button text
   if (fullDescription.style.display === "none") {
-    fullDescription.style.display = "block"; // Show the full description
-    description.style.display = "none"; // Hide the truncated description
-    toggleText.textContent = "Less"; // Change text to 'Less'
+    fullDescription.style.display = "block";
+    description.style.display = "none";
+    toggleText.textContent = "Less";
   } else {
-    fullDescription.style.display = "none"; // Hide the full description
-    description.style.display = "block"; // Show the truncated description
-    toggleText.textContent = "More"; // Change text to 'More'
+    fullDescription.style.display = "none";
+    description.style.display = "block";
+    toggleText.textContent = "More";
   }
 }
 
@@ -74,7 +74,7 @@ function removeFromCart(productId) {
 // Display products
 function displayProducts(productsToDisplay) {
   const productsContainer = document.getElementById("productsContainer");
-  productsContainer.innerHTML = ""; // Clear existing products
+  productsContainer.innerHTML = "";
 
   productsToDisplay.forEach((product) => {
     const productCard = document.createElement("div");
